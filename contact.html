@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains contact form">
+    <meta name="keywords" content="Lionel Messi, contact form">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="container">
+
+    <header class="both">
+        <h1>Lionel Messi</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li>
+                <a href="index.html">Media</a>
+                <ul class="dropdown">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="video.html">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <main class="bodygriditem">
+
+            <h2>Contact</h2>
+            <form method="post" action="registor.php">
+                <section class="form-content">
+                    <label for="name" class="required">Name: </label>
+                    <input type="text" id="name" name="Name" maxlength="20" autofocus required> <br>
+                </section>
+                <section class="form-content">
+                    <label for="email" class="required">Email: </label>
+                    <input type="email" id="email" name="Email" required> <br>
+                </section>
+                <section class="form-content">
+                    <label for="phone" class="required">Phone Number: </label>
+                    <input type="number" min="0" maxlength="10" id="phone" name="Phone" required> <br>
+                </section>
+                <section class="form-content">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="DOB"> <br>
+                </section>
+                <section class="form-content">
+                    <label for="country">Country: </label>
+                    <select name="Country" id="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="australia">Australia</option>
+                        <option value="germany">Germany</option>
+                    </select> <br>
+                </section>
+                <section>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label> <br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label> <br>
+                    </fieldset> <br>
+                </section>
+                <section class="form-content">
+                    <input type="reset" id="reset" value="Clear form">
+                    <input type="submit" id="Submit" value="submit form">
+                </section>
+            </form>
+        </main>
+
+        <aside>
+            <h2>Additional Information</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">About Lionel Messi</a></li>
+                <li><a href="https://www.instagram.com/leomessi/?hl=en" target="_blank">Instagram account link</a></li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer class="both">
+        <p>&copy; Meet Barot, 2023</p>
+    </footer>
+
+
+</body>
+
+</html>

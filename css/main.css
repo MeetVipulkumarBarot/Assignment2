@@ -1,0 +1,428 @@
+/*
+Name: Meet Vipulkumar Barot 
+Student Number : 8909602
+Topic: Assignment 2 
+*/
+
+/* Index page style sheet */
+body{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    font: normal normal normal 1rem arial;
+    padding: 1.25rem;
+    background-color: #fdecdd;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 1rem auto;
+}
+
+.both{
+    border: 3px solid #272260;
+    border-radius: 30px;
+    margin: 0px;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, #ee9ca7, #ffdde1);
+}
+
+.content{ /* inside container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-bottom: 0.625rem;
+}
+
+/* Dropdown menu */
+
+nav{ 
+    padding: 0rem 31.25rem;
+}
+
+nav ul{
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 1.25rem;
+    color: #8a1300;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;  
+}
+
+nav ul li ul.dropdown{
+    width: 100%;
+    /*background: #fdecdd;*/
+    position: absolute;
+    display: none; 
+}
+
+nav ul li ul.dropdown li{
+    display: block;
+}
+
+nav ul li a:hover{
+    background: #8a1300;
+    color: #fdecdd;
+    border-radius: 15px;    
+}
+
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+h1,h2{
+    color: #c40000;     
+    font-variant: small-caps;
+}
+
+main{
+    width: 60vw;
+    flex: 2 1;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#image1{
+    width: 60%;
+    height: auto;
+    float: left;
+    clip-path: circle();
+
+    shape-outside: circle();
+    shape-margin: 15px;
+}
+
+p{
+    display: inline;
+}
+
+.bodygriditem{
+    margin: 0.625rem;
+    padding: 0.625rem;
+}
+
+.maingriditem{
+    overflow: auto;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, td, th{
+    border: 0.1rem solid black;
+}
+
+td, th{
+    padding: 0.5rem;
+}
+
+aside{
+    width: 25vw;
+    flex: 1 1;
+    padding: 0.625rem;
+    background: url("../images/asideimage.jpg") center bottom / cover ;
+}
+
+aside ul li{
+    list-style: none;
+    line-height: 2;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #ee4f35;
+}
+
+aside a:hover{
+    color: rgb(220, 43, 226);
+    font-weight: bold;
+}
+
+
+q{
+    font-size: 1.5em;
+    font-family: cursive;
+    font-style: italic;    
+}
+
+footer p{
+    font-size: 0.75em;
+    color: #780e0e;
+}
+
+/* gallery page style sheet */
+
+.image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#img1{
+    clip-path: polygon(7px 0px, 96.19% 61px, 97.12% 85.03%, 0.94% 97.89%);
+}
+
+#img2{
+    clip-path: polygon(142px -2px, 99.07% 71px, 99.39% 56.68%, 56.08% 87.97%, 2.74% 61.41%, 2.38% 20.95%);
+}
+
+#img3{
+    clip-path: polygon(7px 50px, 96.91% 2px, 99.28% 98.28%, 3.82% 89.25%);
+}
+
+#img4{
+    clip-path: polygon(0px -1px, 91.15% 56px, 90.28% 84.17%, 0.22% 99.62%);
+}
+
+#img5{
+    clip-path: polygon(143px 2px, 99.43% 68px, 99.03% 59.09%, 54.64% 80.75%, 2.74% 61.41%, 1.66% 16.14%);
+}
+
+#img6{
+    clip-path: polygon(5px 79px, 97.27% 6px, 95.68% 79.65%, 0.58% 64.34%);
+}
+
+#img7{
+    clip-path: polygon(2px 1px, 90.07% 76px, 92.8% 85.03%, 0.94% 99.65%);
+}
+
+#img8{
+    clip-path: polygon(131px 2px, 98.71% 98px, 100.47% 46.96%, 54.28% 69.04%, 1.3% 46.92%, 0.22% 16.86%);
+}
+
+#img9{
+    clip-path: polygon(10px 84px, 96.91% 7px, 96.40% 83.90%, 3.82% 69.2%);
+}
+
+
+/* video page style sheet*/
+
+.video-container{
+    width: 100%;
+    height: auto;
+}
+
+iframe{
+    width: 893.33px;
+    height: 502.31px;
+}
+
+/* contact page style sheet */
+
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 1.25rem;
+}
+
+label, legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #9d1600;
+}
+
+input{
+    width: 20%;
+}
+
+input[type=radio]{
+    width: 5%;
+}
+
+input[type=submit], input[type=reset]{
+    width: auto;
+    padding: 0.5rem;
+    border: 0.1rem solid #9d1600;
+    border-radius: 30px;
+    background-color: #fdecdd;
+    font-weight: bold;
+    color: #9d1600;
+    margin: 0.31rem;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    color: #fdecdd;
+    background-color: #9d1600;
+} 
+
+.required::after{
+    content: "*";
+    color: #830000;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    /* index page */
+    body{
+        font-size: 0.87rem;
+    }
+
+    nav{
+        padding: 0px 13.75rem;
+    }
+
+    aside{
+        background: url("../images/media\ query\ image\ 2.jpg") center center / cover; 
+    }
+
+    /* gallery page */
+
+    #img1{
+        clip-path: circle();
+    }
+
+    #img2{
+        clip-path: circle();   
+    }
+
+    #img3{
+        clip-path: circle();
+    }
+
+    #img4{
+        clip-path: circle();
+    }
+
+    #img5{
+        clip-path: circle();
+    }
+
+    #img6{
+        clip-path: circle();
+    }
+
+    #img7{
+        clip-path: circle();
+    }
+
+    #img8{
+        clip-path: circle();
+    }
+
+    #img9{
+        clip-path: circle();
+    }
+
+    /* video page */
+
+    iframe{
+        width: 445.37px;
+        height: 250.31px;
+    }
+
+    /* contact page */
+
+    label, legend{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* index page */
+    body{
+        font-size: 0.75rem;
+    }
+
+    nav{
+        padding: 0rem 5rem;
+    }
+    
+    aside{
+        background: url("../images/media\ query\ image\ 1.jpg_large") center center / cover;
+    }
+
+    aside ul li a{
+        color: rgb(236, 240, 13);
+    }
+
+    /*gallery page*/
+
+    #img1{
+        clip-path: circle();
+    }
+
+    #img2{
+        clip-path: circle();   
+    }
+
+    #img3{
+        clip-path: circle();
+    }
+
+    #img4{
+        clip-path: circle();
+    }
+
+    #img5{
+        clip-path: circle();
+    }
+
+    #img6{
+        clip-path: circle();
+    }
+
+    #img7{
+        clip-path: circle();
+    }
+
+    #img8{
+        clip-path: circle();
+    }
+
+    #img9{
+        clip-path: circle();
+    }
+
+    /* video page */
+
+    iframe{
+        width: 280px;
+        height: 157.50px;
+    }
+
+    /* contact page */
+
+    label, legend{
+        font-size: 0.8rem;
+    }
+}
